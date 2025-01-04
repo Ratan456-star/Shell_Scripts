@@ -1,0 +1,7 @@
+#!/bin/bash
+#Variable 
+salutation="Welcome to DevOps Variable Scripts"
+script_name="variable_script"
+
+echo $salutation
+echo This script name is $script_name
