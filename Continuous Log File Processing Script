@@ -1,0 +1,17 @@
+#!/bin/bash
+#Rotating the logs file until the file execution is completed
+log_path=/var/log/*.log
+process_dir=./process-directory
+while true
+do 
+        for log_file in $log_path
+        do 
+                if [ -f "$log_file" ] 
+                then
+                        echo "processing log file $log_file"
+                        cp $log_file $process_dir
+                        echo "Log file $log_file processed and moved to $process_dir"
+                fi
+        done
+        sleep 5
+done
