@@ -1,0 +1,12 @@
+#!/bin/bash
+#This script is used to check if the directory is created, if not created than it will create new
+#
+directory_name=testing-condition
+path=/home/devops
+if [ -e $path/$directory_name ]
+then
+        echo $path/$directory_name is present
+else
+        mkdir $path/$directory_name
+        echo directory was not present, new directory is created $path/$directory_name
+fi
