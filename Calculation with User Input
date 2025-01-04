@@ -1,0 +1,18 @@
+#!/bin/bash
+salutation="Welcome to calculation script"
+script_name="calculator_script"
+echo $salutation
+
+echo "Please enter the 1st number for calculation"
+read num1
+
+echo "Provide the 2nd number for calculate"
+read num2
+
+sum=$(( num1 + num2 ))
+
+echo $script_name
+echo "Calculation is completed and the value is $sum"
+
+exponentiation=$(( num1 ** num2))
+echo $exponentiation
