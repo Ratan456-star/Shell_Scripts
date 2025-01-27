@@ -1,0 +1,17 @@
+#!/bin/bash
+#for variable Key=value 
+#path=/tmp/dim1
+echo "please provide desired number"
+read number1
+if [ $number1 -gt 100 ]
+then
+        echo "$number1 is greater than 100"
+else
+        echo "please provide correct number"
+fi
+#Creating new directory under /home location
+#mkdir $path
+#creating new file 
+#touch $path/file1
+#Installing the package maven 
+##sudo apt install maven -y

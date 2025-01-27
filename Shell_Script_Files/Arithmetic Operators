@@ -1,0 +1,15 @@
+#!/bin/bash
+#Variable 
+salutation="Welcome to DevOps Variable Scripts"
+script_name="variable_script"
+
+echo $salutation
+echo This script name is $script_name
+
+# addition (+), separator (-), divider (/) , multiplication (*)
+
+sum=$(( 2 * 4 ))
+echo Multiplication of two number $sum
+
+addition=$(( 2 + 10 ))
+echo Addition of two number $addition

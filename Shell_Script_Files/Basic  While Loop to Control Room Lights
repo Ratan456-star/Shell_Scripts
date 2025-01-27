@@ -1,0 +1,7 @@
+#!/bin/bash
+room=1
+while [ $room -le 5 ]	
+do
+        echo "Turning on the light in Room $room"
+        room=$((room +1))
+done
